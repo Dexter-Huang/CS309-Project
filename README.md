@@ -1,19 +1,15 @@
-# hotel-test2-ui
+## 在线连锁酒店客房预订管理平台、后台
+- 该项目基于前后端分离架构模式实现。在用户体验层面，该项目实现用户注册登录、预订、退订、支付、在线咨询、点赞评论、秒杀优惠券、秒杀节假日热门房型等多样化在线应用场景。同时该项目在酒店管理层面，实现了酒店销售额、入住量的数据可视化展示，同时提供酒店管理员查看、管理、通知酒店员工的网站功能，实现酒店高效管理。
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- 主要技术栈： 
+SpringBoot+Mybatis-plus+Redis+MySQL+Quartz+WebSocket+Vue.js
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- 责任描述：
+（1） 基于Redis实现秒杀房型、秒杀优惠券、网站首页数据缓存等应用场景
+（2）基于WebSocket实现网站用户聊天功能，如用户与用户，用户咨询客服，企业内部员工通知等 
+（3）基于Redis，Quartz 实现酒店点赞数，评论点赞数的缓存并持久化到数据库中
+（4）基于Quartz 实现秒杀活动定时开启，方便酒店后台管理
+（5）基于高德地图开放平台API实现用户在线地图搜索功能
+（6）基于element-plus UI框架实现网站网页的响应式布局设计
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
